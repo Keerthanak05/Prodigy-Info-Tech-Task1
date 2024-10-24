@@ -23,25 +23,25 @@ The objective of this code is to generate a high-quality image using a text prom
 Key Activities:
 
 
-Installing Libraries
+*Installing Libraries
 
-Device Check
+*Device Check
 
-Model Loading
+*Model Loading
 
-Image Generation
+*Image Generation
 
-Display and Save the Image
+*Display and Save the Image
 
 
 Technologies Used:
 
-Hugging Face Diffusers
+*Hugging Face Diffusers
 
-Transformers
+*Transformers
 
-Accelerate 
+*Accelerate 
 
-PyTorch
+*PyTorch
 
-PIL (Python Imaging Library)
+*PIL (Python Imaging Library)
