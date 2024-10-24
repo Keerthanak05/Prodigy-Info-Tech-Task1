@@ -1,0 +1,26 @@
+# Install necessary libraries
+!pip install diffusers transformers accelerate
+
+import torch
+from diffusers import StableDiffusionPipeline
+from PIL import Image
+
+# Check if GPU is available
+device = "cuda" if torch.cuda.is_available() else "cpu"
+
+# Load the Stable Diffusion model
+pipe = StableDiffusionPipeline.from_pretrained("CompVis/stable-diffusion-v1-4", torch_dtype=torch.float16)
+pipe = pipe.to(device)
+
+# Define your text prompt
+prompt = "A beautiful sunset over the mountains"  # Change this to your desired prompt
+
+# Generate the image
+with torch.no_grad():
+    image = pipe(prompt, height=512, width=512).images[0]
+
+# Display the image
+image.show()
+
+# Optionally save the image
+image.save("generated_image.png")
