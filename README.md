@@ -14,6 +14,14 @@ Overview of the Project
 
 Project:Image Generation with Pre-trained Models.
 
+
+
+
+
+![image](https://github.com/user-attachments/assets/83d0f700-e75a-46fb-b7df-21c8821f2eba)
+
+
+
 Objective:
 
 
